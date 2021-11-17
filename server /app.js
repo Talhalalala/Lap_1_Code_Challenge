@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
+const path = require("path");
 
 const http = require("http");
 
@@ -8,7 +9,16 @@ const port = 3000;
 
 app.use(cors());
 
-app.get("/", (req, res) => res.send("Hello World!"));
+app.get("/index", (req, res) => {
+  res.sendFile(__dirname + "/page.html");
+});
+
+// app.get("/", (req, res) => res.send("/client/index.html"));
+
+// attempt:
+// app.get("/test", function get(req, res) {
+//   res.sendFile("client/index.html", { root: __client });
+// });
 
 app.listen(port, () =>
   console.log(`Express departing now from http://localhost:${port}`)

@@ -26,3 +26,14 @@ h1 {
 .navbar {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
+
+a {
+  text-decoration: none;
+}
+a:link,
+a:visited {
+  color: #1a0dab;
+}
+a:hover {
+  text-decoration: underline;
+}
