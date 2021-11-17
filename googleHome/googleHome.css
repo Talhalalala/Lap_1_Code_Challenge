@@ -58,6 +58,11 @@ nav button {
 	cursor: pointer;
 }
 
+.menu {
+	width: 3.5%;
+	height: 3.5%;
+}
+
 .mainSection {
 	flex: 1;
 }
@@ -66,6 +71,8 @@ nav button {
 	display: block;
 	margin: 0px auto;
 	margin-top: 107px;
+	width: 25%;
+	height: 25%;
 }
 
 .search-box {
@@ -177,3 +184,12 @@ footer a:hover {
 .rightLinks {
 	padding-right: 18.7px;
 }
+
+.leftNavLinks {
+	padding-left: 18.7px;
+	flex: 1;
+}
+
+/* .rightNavLinks {
+	padding-right:
+} */
